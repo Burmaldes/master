@@ -8,4 +8,3 @@ namespace SlaSolver.Solvers {
         double[] Solve(double[,] matrixA, double[] vectorB);
     }
 }
-

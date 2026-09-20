@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -134,7 +135,7 @@ public partial class MainWindow : Window
 
     private static string FormatSolution(double[] x)
     {
-        var sb = new System.Text.StringBuilder();
+        var sb = new StringBuilder();
         for (int i = 0; i < x.Length; i++)
             sb.AppendLine($"x{i + 1} = {x[i]:0.######}");
         return sb.ToString();
