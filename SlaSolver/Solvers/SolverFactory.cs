@@ -1,4 +1,6 @@
-﻿namespace SlaSolver.Solvers {
+using SlaSolver.Solvers.Ruchkins;
+
+namespace SlaSolver.Solvers {
     public class SolverFactory 
     {
         public static IReadOnlyList<ISolver> All { get; } = new List<ISolver>
