@@ -1,10 +1,10 @@
-﻿namespace SlaSolver.Solvers
+namespace SlaSolver.Solvers
 {
     /*
      * Метод №3
      * Ruchkins 
     */
-    public class SolverGauss 
+    public class SolverGauss : ISolver
     {
         public string MethodName 
         {
@@ -18,7 +18,7 @@
             }
         }
 
-        public static double[] GaussMethod(double[,] matrixA, double[] vectorB) 
+        public double[] Solve(double[,] matrixA, double[] vectorB)
         {
             int n = vectorB.Length;
 
