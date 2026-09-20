@@ -5,17 +5,7 @@ namespace SlaSolver.Solvers.Ruchkins
     */
     public class SolverGauss : ISolver
     {
-        public string MethodName 
-        {
-            get
-            {
-                return MethodName;
-            }
-            set
-            {
-                MethodName = "Метод Гаусса";
-            }
-        }
+        public string MethodName => "Метод Гаусса";
 
         public double[] Solve(double[,] matrixA, double[] vectorB)
         {
