@@ -7,6 +7,9 @@ namespace SlaSolver.Solvers {
         public static IReadOnlyList<ISolver> All { get; } = new List<ISolver>
     {
             //сюда будем добавлять все методы решения
+            new CramerSolver(),
+            new GaussJordanSolver(),
+            new SquareRootSolver()
         };
     }
 }
