@@ -1,9 +1,4 @@
-﻿using SlaSolver.Solvers.Ruchkins;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SlaSolver.Solvers.Karlovsk
+﻿namespace SlaSolver.Solvers.Karlovsk
 {
     internal class SolverMatrix : ISolver
     {
