@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using SlaSolver.Solvers.Ruchkins;
 
 namespace SlaSolver.Solvers {
-    internal class SolverFactory {
-        public static IReadOnlyList<ISolver> All { get; } = new List<ISolver>
+    public class SolverFactory 
     {
-            //сюда будем добавлять все методы решения
-            new CramerSolver(),
-            new GaussJordanSolver(),
-            new SquareRootSolver()
+        public static IReadOnlyList<ISolver> All { get; } = new List<ISolver>
+        {
+             new SolverMatrix(),// 1 метод
+             new SolverGauss(), // 3 метод
+             new SolverTridiagonal(),// 5  метод
+             new SolverLUDecomposition(), // 6 метод
+             new CramerSolver(),
+             new GaussJordanSolver(),
+             new SquareRootSolver()
+             //сюда будем добавлять все методы решения
         };
     }
 }
