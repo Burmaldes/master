@@ -10,8 +10,10 @@ namespace SlaSolver.Solvers {
              new SolverGauss(), // 3 метод
              new SolverTridiagonal(),// 5  метод
              new SolverLUDecomposition(), // 6 метод
+             new CramerSolver(),
+             new GaussJordanSolver(),
+             new SquareRootSolver()
              //сюда будем добавлять все методы решения
-            
         };
     }
 }
