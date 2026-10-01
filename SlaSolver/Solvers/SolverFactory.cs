@@ -1,4 +1,5 @@
 using SlaSolver.Solvers.Ruchkins;
+using SlaSolver.Solvers.Karlovsk;
 
 namespace SlaSolver.Solvers {
     public class SolverFactory 
